@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <meta
       name="description"
       content="Aegis-5 is a workbench-built Nerf turret prototype made with 3D-printed parts and a Raspberry Pi core."
@@ -11,19 +14,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="boot-screen" aria-hidden="true">
+      <div class="boot-window">
+        <div class="boot-titlebar">
+          <span>AEGIS-5 SYSTEM STARTUP</span>
+          <span class="boot-close">×</span>
+        </div>
+        <div class="boot-content">
+          <p>AEGIS PERSONAL COMPUTER<br />BUILD LOG BIOS v0.1</p>
+          <p>CHECKING PRINTED PARTS ........ OK<br />RASPBERRY PI CORE ............ OK<br />NERF TURRET PROJECT .......... READY</p>
+          <div class="boot-track"><span></span></div>
+          <p class="boot-prompt">PRESSING ANY KEY IS NOT REQUIRED<span class="cursor">_</span></p>
+        </div>
+      </div>
+    </div>
+
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#overview" aria-label="Aegis-5 home">
           <span class="brand-mark" aria-hidden="true"></span>
           <span>Aegis-5</span>
         </a>
-
-        <nav class="nav" aria-label="Main navigation">
-          <a href="#overview">The build</a>
-          <a href="#parts">Loose parts</a>
-          <a href="#brain">The brain</a>
-        </nav>
+        <div class="window-controls" aria-hidden="true">
+          <span>_</span><span>□</span><span>×</span>
+        </div>
       </header>
+
+      <div class="menu-bar" aria-hidden="true">
+        <span><u>F</u>ile</span>
+        <span><u>V</u>iew</span>
+        <span><u>B</u>uild log</span>
+        <span class="menu-version">AEGIS-5 / REV 01</span>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#overview">The build</a>
+        <a href="#parts">Loose parts</a>
+        <a href="#brain">The brain</a>
+      </nav>
 
       <main>
         <section class="hero" id="overview">
@@ -85,7 +113,17 @@
 
       <footer class="footer">
         <span>Aegis-5 · Nerf turret prototype</span>
+        <span>MEM: 640K SHOULD BE ENOUGH</span>
       </footer>
     </div>
+
+    <script>
+      const bootScreen = document.querySelector(".boot-screen");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.setTimeout(() => {
+        bootScreen.classList.add("is-dismissed");
+        window.setTimeout(() => bootScreen.setAttribute("hidden", ""), reducedMotion ? 0 : 220);
+      }, reducedMotion ? 350 : 1350);
+    </script>
   </body>
 </html>
