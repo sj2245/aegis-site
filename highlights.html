@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Highlights from the Aegis-5 Nerf turret build: printed parts, assembly, and Raspberry Pi cooling."
+    />
+    <title>Aegis-5 — Highlights</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="explorer-window">
+      <header class="titlebar">
+        <div class="window-title">
+          <span class="app-icon" aria-hidden="true">▧</span>
+          <span>Aegis-5 — Highlights</span>
+        </div>
+        <div class="window-controls" aria-hidden="true">
+          <span>_</span><span>□</span><span>×</span>
+        </div>
+      </header>
+
+      <div class="menu-bar" aria-label="Explorer menu">
+        <span><u>F</u>ile</span>
+        <span><u>E</u>dit</span>
+        <span><u>V</u>iew</span>
+        <span><u>T</u>ools</span>
+        <span><u>H</u>elp</span>
+      </div>
+
+      <div class="toolbar" aria-label="Explorer toolbar">
+        <a href="index.html" class="tool-button" aria-label="Back to Aegis-5">←</a>
+        <a href="index.html" class="tool-button" aria-label="Forward to Aegis-5">→</a>
+        <a href="index.html" class="tool-button up-button" aria-label="Up to project folder">↑</a>
+        <span class="toolbar-divider"></span>
+        <span class="toolbar-label">Folders</span>
+        <span class="toolbar-spacer"></span>
+        <span class="view-mode"><span aria-hidden="true">▦</span> Thumbnails</span>
+      </div>
+
+      <div class="address-row">
+        <span class="address-label">Address</span>
+        <div class="address-field">
+          <span class="folder-icon" aria-hidden="true"></span>
+          <span>This PC</span><span class="crumb-arrow">›</span>
+          <span>Projects</span><span class="crumb-arrow">›</span>
+          <a href="index.html">Aegis-5</a><span class="crumb-arrow">›</span>
+          <strong>Highlights</strong>
+        </div>
+        <span class="go-button">Go</span>
+      </div>
+
+      <div class="explorer-layout">
+        <aside class="folder-sidebar" aria-label="Folders">
+          <p class="sidebar-heading">Folders</p>
+          <a class="folder-link" href="index.html"><span aria-hidden="true">▣</span> Aegis-5</a>
+          <a class="folder-link nested-folder" href="index.html#parts"><span aria-hidden="true">▣</span> Printed parts</a>
+          <a class="folder-link nested-folder" href="index.html#brain"><span aria-hidden="true">▣</span> Electronics</a>
+          <a class="folder-link current-folder" href="highlights.html" aria-current="page"><span aria-hidden="true">▣</span> Highlights</a>
+          <a class="folder-link" href="team.html"><span aria-hidden="true">▣</span> Team bios</a>
+          <div class="sidebar-divider"></div>
+          <p class="sidebar-heading">Details</p>
+          <p class="sidebar-detail">Selected build photos<br />Aegis-5 · In progress</p>
+        </aside>
+
+        <div class="file-pane">
+          <section class="highlights-intro">
+            <p class="eyebrow">Project folder · Selected files</p>
+            <h1>Highlights</h1>
+            <p>Parts, assembly, and the Raspberry Pi core.</p>
+          </section>
+
+          <div class="gallery-collections" aria-label="Build photo collections">
+            <section class="gallery-collection" aria-labelledby="design-gallery">
+              <header class="gallery-heading">
+                <div>
+                  <p class="eyebrow">CONCEPT / 01</p>
+                  <h2 id="design-gallery">Design &amp; CAD</h2>
+                </div>
+                <span>04 ITEMS</span>
+              </header>
+              <div class="gallery-grid">
+                <figure class="gallery-card">
+                  <img src="images/blueprint1.png" alt="Early hand-drawn Nerf turret concept sketches" loading="lazy" />
+                  <figcaption><strong>First concepts</strong><span>Initial layout sketches</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/blueprint2.png" alt="Dimensioned side-profile drawing of the turret" loading="lazy" />
+                  <figcaption><strong>Side profile</strong><span>Planning dimensions</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/internalscad2.png" alt="CAD view of the turret's internal mechanism" loading="lazy" />
+                  <figcaption><strong>Internal layout</strong><span>CAD assembly detail</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/turretpic.png" alt="Full CAD model of the assembled turret" loading="lazy" />
+                  <figcaption><strong>Full assembly</strong><span>CAD model</span></figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="gallery-collection" aria-labelledby="workshop-gallery">
+              <header class="gallery-heading">
+                <div>
+                  <p class="eyebrow">WORKSHOP / 02</p>
+                  <h2 id="workshop-gallery">Hands-on assembly</h2>
+                </div>
+                <span>04 ITEMS</span>
+              </header>
+              <div class="gallery-grid">
+                <figure class="gallery-card">
+                  <img src="images/amirscewing.png" alt="A team member fastening the printed turret body" loading="lazy" />
+                  <figcaption><strong>Fastening the body</strong><span>Assembly work</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/assembly.jpg" alt="Team members fitting together the white printed frame" loading="lazy" />
+                  <figcaption><strong>Frame assembly</strong><span>Fitting printed panels</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/dylanscrewing.png" alt="A team member using an electric screwdriver on a printed part" loading="lazy" />
+                  <figcaption><strong>Securing a part</strong><span>Workshop detail</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/rishavsanding.png" alt="A team member sanding a printed component" loading="lazy" />
+                  <figcaption><strong>Finishing a print</strong><span>Sanding and fit</span></figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="gallery-collection" aria-labelledby="team-gallery">
+              <header class="gallery-heading">
+                <div>
+                  <p class="eyebrow">TEAM / 03</p>
+                  <h2 id="team-gallery">People behind the build</h2>
+                </div>
+                <span>04 ITEMS</span>
+              </header>
+              <div class="gallery-grid">
+                <figure class="gallery-card">
+                  <img src="images/brandonlaptop.png" alt="A team member working on a laptop beside the project parts" loading="lazy" />
+                  <figcaption><strong>Working through the data</strong><span>Project research</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/dylanpic real.png" alt="A team member working at the project workbench" loading="lazy" />
+                  <figcaption><strong>At the workbench</strong><span>Build session</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/dylanpicnew].png" alt="Team members working together around the project table" loading="lazy" />
+                  <figcaption><strong>Building together</strong><span>Teamwork in progress</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/whiteboardplanning.png" alt="Turret design ideas and sketches on a whiteboard" loading="lazy" />
+                  <figcaption><strong>Whiteboard ideas</strong><span>Planning the design</span></figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="gallery-collection" aria-labelledby="testing-gallery">
+              <header class="gallery-heading">
+                <div>
+                  <p class="eyebrow">ITERATION / 04</p>
+                  <h2 id="testing-gallery">Testing &amp; iteration</h2>
+                </div>
+                <span>04 ITEMS</span>
+              </header>
+              <div class="gallery-grid">
+                <figure class="gallery-card">
+                  <img src="images/flywheels.png" alt="Pair of flywheel motors mounted on an orange printed bracket" loading="lazy" />
+                  <figcaption><strong>Flywheel motors</strong><span>Feed mechanism</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/measuringtape.jpg" alt="Team members checking the project setup during a test" loading="lazy" />
+                  <figcaption><strong>Checking the setup</strong><span>Test session</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/nerfwar.jpg" alt="Team members playing Nerf outdoors" loading="lazy" />
+                  <figcaption><strong>Out in the field</strong><span>Nerf test day</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/rishaveureka.png" alt="Team members testing a battery with a multimeter" loading="lazy" />
+                  <figcaption><strong>Power check</strong><span>Battery testing</span></figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="gallery-collection" aria-labelledby="parts-gallery">
+              <header class="gallery-heading">
+                <div>
+                  <p class="eyebrow">PRINTED PARTS / 05</p>
+                  <h2 id="parts-gallery">Prototype studies</h2>
+                </div>
+                <span>04 ITEMS</span>
+              </header>
+              <div class="gallery-grid">
+                <figure class="gallery-card">
+                  <img src="images/stand.png" alt="CAD model of the turret mounted on its stand" loading="lazy" />
+                  <figcaption><strong>Turret on stand</strong><span>CAD assembly</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/imagebase.png" alt="The 3D-printed turret base" loading="lazy" />
+                  <figcaption><strong>Turret base</strong><span>Printed part</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/imagehead.png" alt="The 3D-printed turret head assembly" loading="lazy" />
+                  <figcaption><strong>Turret head</strong><span>Printed part</span></figcaption>
+                </figure>
+                <figure class="gallery-card">
+                  <img src="images/imagemag.png" alt="The 3D-printed Nerf turret magazine component" loading="lazy" />
+                  <figcaption><strong>Magazine</strong><span>Printed part</span></figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+
+          <footer class="status-bar">
+            <span>20 photos · 5 collections</span>
+            <span>Aegis-5 · Highlights</span>
+            <span>MEM: 640K SHOULD BE ENOUGH</span>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

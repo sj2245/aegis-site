@@ -8,9 +8,9 @@
     </script>
     <meta
       name="description"
-      content="Aegis-5 is a workbench-built Nerf turret prototype made with 3D-printed parts and a Raspberry Pi core."
+      content="Aegis-5 project folder: a Nerf turret prototype built from 3D-printed parts and a Raspberry Pi."
     />
-    <title>Aegis-5 | Workbench Prototype</title>
+    <title>Aegis-5 — File Explorer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,98 +24,127 @@
           <p>AEGIS PERSONAL COMPUTER<br />BUILD LOG BIOS v0.1</p>
           <p>CHECKING PRINTED PARTS ........ OK<br />RASPBERRY PI CORE ............ OK<br />NERF TURRET PROJECT .......... READY</p>
           <div class="boot-track"><span></span></div>
-          <p class="boot-prompt">PRESSING ANY KEY IS NOT REQUIRED<span class="cursor">_</span></p>
+          <p class="boot-prompt">STARTING FILE EXPLORER<span class="cursor">_</span></p>
         </div>
       </div>
     </div>
 
-    <div class="page-shell">
-      <header class="topbar">
-        <a class="brand" href="#overview" aria-label="Aegis-5 home">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span>Aegis-5</span>
-        </a>
+    <main class="explorer-window">
+      <header class="titlebar">
+        <div class="window-title">
+          <span class="app-icon" aria-hidden="true">▧</span>
+          <span>Aegis-5 — File Explorer</span>
+        </div>
         <div class="window-controls" aria-hidden="true">
           <span>_</span><span>□</span><span>×</span>
         </div>
       </header>
 
-      <div class="menu-bar" aria-hidden="true">
+      <div class="menu-bar" aria-label="Explorer menu">
         <span><u>F</u>ile</span>
+        <span><u>E</u>dit</span>
         <span><u>V</u>iew</span>
-        <span><u>B</u>uild log</span>
-        <span class="menu-version">AEGIS-5 / REV 01</span>
+        <span><u>T</u>ools</span>
+        <span><u>H</u>elp</span>
       </div>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#overview">The build</a>
-        <a href="#parts">Loose parts</a>
-        <a href="#brain">The brain</a>
-      </nav>
+      <div class="toolbar" aria-label="Explorer toolbar">
+        <a href="#overview" class="tool-button" aria-label="Back">←</a>
+        <a href="#overview" class="tool-button" aria-label="Forward">→</a>
+        <a href="#parts" class="tool-button up-button" aria-label="Up one folder">↑</a>
+        <span class="toolbar-divider"></span>
+        <span class="toolbar-label">Folders</span>
+        <span class="toolbar-spacer"></span>
+        <span class="view-mode"><span aria-hidden="true">▦</span> Thumbnails</span>
+      </div>
 
-      <main>
-        <section class="hero" id="overview">
-          <div class="hero-copy">
-            <p class="eyebrow">In progress</p>
-            <h1>Printed in pieces.<br />Put together on the dinner table.</h1>
-            <p class="intro">A Nerf turret built from 3D-printed parts and a Raspberry Pi.</p>
+      <div class="address-row">
+        <span class="address-label">Address</span>
+        <div class="address-field">
+          <span class="folder-icon" aria-hidden="true"></span>
+          <span>This PC</span><span class="crumb-arrow">›</span>
+          <span>Projects</span><span class="crumb-arrow">›</span>
+          <strong>Aegis-5</strong>
+        </div>
+        <span class="go-button">Go</span>
+      </div>
 
-            <a class="build-link" href="#parts">See the parts <span aria-hidden="true">↓</span></a>
+      <div class="explorer-layout">
+        <aside class="folder-sidebar" aria-label="Folders">
+          <p class="sidebar-heading">Folders</p>
+          <a class="folder-link" href="#overview"><span>▣</span> Desktop</a>
+          <a class="folder-link" href="#overview"><span>▣</span> Documents</a>
+          <a class="folder-link" href="#overview"><span>▣</span> Projects</a>
+          <a class="folder-link current-folder" href="#overview"><span>▣</span> Aegis-5</a>
+          <a class="folder-link nested-folder" href="#parts"><span>▣</span> Printed parts</a>
+          <a class="folder-link nested-folder" href="#brain"><span>▣</span> Electronics</a>
+          <a class="folder-link" href="highlights.html"><span aria-hidden="true">▣</span> Highlights</a>
+          <a class="folder-link" href="team.html"><span aria-hidden="true">▣</span> Team bios</a>
+          <div class="sidebar-divider"></div>
+          <p class="sidebar-heading">Details</p>
+          <p class="sidebar-detail">Nerf turret prototype<br />3D-printed · Raspberry Pi</p>
+        </aside>
 
-            <ul class="build-facts" aria-label="Build details">
-              <li><span>Structure</span><strong>3D-printed</strong></li>
-              <li><span>Controller</span><strong>Raspberry Pi</strong></li>
-            </ul>
-          </div>
+        <div class="file-pane">
+          <section class="hero" id="overview">
+            <div class="hero-copy">
+              <p class="eyebrow">Project folder · In progress</p>
+              <h1>Aegis-5</h1>
+              <p class="intro">A Nerf turret built from 3D-printed parts and a Raspberry Pi.</p>
+              <ul class="build-facts" aria-label="Build details">
+                <li><span>Structure</span><strong>3D-printed</strong></li>
+                <li><span>Controller</span><strong>Raspberry Pi</strong></li>
+              </ul>
+            </div>
 
-          <figure class="hero-photo">
-            <img src="images/image.png" alt="Aegis-5 printed turret parts being assembled at a workbench" />
-            <span class="photo-stamp">BUILD / 001</span>
-            <figcaption>
-              <span>Assembly in progress</span>
-            </figcaption>
-          </figure>
-        </section>
-
-        <section class="parts-section" id="parts">
-          <div class="section-heading">
-            <p class="eyebrow">Parts on the bench</p>
-            <h2>Printed parts</h2>
-          </div>
-
-          <div class="parts-grid">
-            <figure class="part-card part-base">
-              <img src="images/imagebase.png" alt="The 3D-printed turret base" loading="lazy" />
-              <figcaption><span>01 / Base</span><strong>Foundation</strong></figcaption>
+            <figure class="hero-photo">
+              <img src="images/image.png" alt="Aegis-5 printed turret parts being assembled at a workbench" />
+              <span class="photo-stamp">BUILD / 001</span>
+              <figcaption>Assembly in progress</figcaption>
             </figure>
-            <figure class="part-card part-head">
-              <img src="images/imagehead.png" alt="The printed turret head assembly" loading="lazy" />
-              <figcaption><span>02 / Head</span><strong>Turret head</strong></figcaption>
-            </figure>
-            <figure class="part-card part-mag">
-              <img src="images/imagemag.png" alt="The Nerf turret magazine component" loading="lazy" />
-              <figcaption><span>03 / Magazine</span><strong>Magazine</strong></figcaption>
-            </figure>
-          </div>
-        </section>
+          </section>
 
-        <section class="brain-section" id="brain">
-          <figure class="brain-photo">
-            <img src="images/imagepi.png" alt="Raspberry Pi board and parts laid out on the workbench" loading="lazy" />
-            <figcaption>Installing an active cooler</figcaption>
-          </figure>
-          <div class="brain-copy">
-            <p class="eyebrow">The brain</p>
-            <h2>Raspberry Pi core</h2>
-          </div>
-        </section>
-      </main>
+          <section class="parts-section" id="parts">
+            <div class="section-heading">
+              <span class="folder-icon" aria-hidden="true"></span>
+              <h2>Printed parts</h2>
+            </div>
 
-      <footer class="footer">
-        <span>Aegis-5 · Nerf turret prototype</span>
-        <span>MEM: 640K SHOULD BE ENOUGH</span>
-      </footer>
-    </div>
+            <div class="parts-grid">
+              <figure class="part-card">
+                <img src="images/imagebase.png" alt="The 3D-printed turret base" loading="lazy" />
+                <figcaption><strong>Base</strong><span>3D image · foundation</span></figcaption>
+              </figure>
+              <figure class="part-card">
+                <img src="images/imagehead.png" alt="The printed turret head assembly" loading="lazy" />
+                <figcaption><strong>Turret head</strong><span>3D image · rotation</span></figcaption>
+              </figure>
+              <figure class="part-card">
+                <img src="images/imagemag.png" alt="The Nerf turret magazine component" loading="lazy" />
+                <figcaption><strong>Magazine</strong><span>3D image · feed system</span></figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="brain-section" id="brain">
+            <figure class="brain-photo">
+              <img src="images/imagepi.png" alt="Raspberry Pi board and parts laid out on the workbench" loading="lazy" />
+              <figcaption>Installing an active cooler</figcaption>
+            </figure>
+            <div class="brain-copy">
+              <p class="eyebrow">Electronics folder</p>
+              <h2>Raspberry Pi core</h2>
+            </div>
+          </section>
+
+          <footer class="status-bar">
+            <span>5 objects</span>
+            <span>Aegis-5 · Nerf turret prototype</span>
+            <span>MEM: 640K SHOULD BE ENOUGH</span>
+          </footer>
+        </div>
+      </div>
+    </main>
 
     <script>
       const bootScreen = document.querySelector(".boot-screen");
